@@ -12,6 +12,9 @@ class User extends AbstractEntity {
   email: string;
 
   @Column()
+  password: string;
+
+  @Column()
   admin: boolean;
 
   constructor() {
