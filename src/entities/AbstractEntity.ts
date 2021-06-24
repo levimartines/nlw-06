@@ -1,4 +1,4 @@
-import { CreateDateColumn, PrimaryColumn, UpdateDateColumn } from "typeorm";
+import { CreateDateColumn, PrimaryColumn } from "typeorm";
 import { v4 as uuid } from "uuid";
 
 abstract class AbstractEntity {
@@ -7,9 +7,6 @@ abstract class AbstractEntity {
 
   @CreateDateColumn()
   created_at: Date;
-
-  @UpdateDateColumn()
-  updated_at: Date;
 
 
   protected constructor() {
