@@ -26,7 +26,7 @@ class Compliment extends AbstractEntity {
 
   @JoinColumn({ name: "tag_id" })
   @ManyToOne(() => User)
-  Tag: Tag;
+  tag: Tag;
 
   @Column()
   message: string;
